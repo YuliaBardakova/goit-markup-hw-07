@@ -71,8 +71,8 @@
     transform: scaleX(1);
 
     background-color: var(--header-linke-color);
-    transition: transform 250ms var(--animation-cub), 
-    opacity: 250ms var(--animation-cub),
+    transition: transform 250ms var(--animation-cub); 
+    opacity: 250ms var(--animation-cub);
     background-color: 250ms var(--animation-cub);
 }
 .accent{
