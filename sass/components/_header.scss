@@ -1,14 +1,14 @@
-.header{
+.header {
     border-bottom: 1px solid #ececec;
 }
 
-.header-nav,.main-nav{
+.header-nav,.main-nav {
     display: flex;
     align-items: center; 
 }
 
 .header-logo,
-.footer-logo{
+.footer-logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -17,7 +17,8 @@
     letter-spacing: 0.03em;
     color: #2196F3;
 }
-.logo-bleack{
+
+.logo-bleack {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -26,6 +27,7 @@
     letter-spacing: 0.03em;
     color: #000000;
 }
+
 .header-list .link.current{
     color: var(--header-linke-color);
 }
@@ -60,27 +62,30 @@
     border-radius: 2px;
     transform: scaleX(0);
     opacity: 0;
-    transition: transform 250ms var(--animation-cub),
+    transition: transform 250ms var(--animation-cub), 
     opacity 250ms var(--animation-cub),
     background-color 250ms var(--animation-cub);
 }
 
 
-.header-link:hover::after{
+.header-link:hover::after {
     opacity: 1;
     transform: scaleX(1);
 
     background-color: var(--header-linke-color);
-    transition: transform 250ms var(--animation-cub); 
-    opacity: 250ms var(--animation-cub);
-    background-color: 250ms var(--animation-cub);
+    transition: transform 250ms var(--animation-cub),
+    opacity 250ms var(--animation-cub),
+    background-color 250ms var(--animation-cub);
 }
-.accent{
+
+.accent {
 color: var(--header-linke-color);
 }
-.line{
+
+.line {
     display: inline-block;
 }
+
 .line::after {
     position: absolute;
     content: "";
@@ -89,25 +94,29 @@ color: var(--header-linke-color);
     left: 0;
     bottom: 0;
     border-radius: 2px;
-    background-color:var(--header-linke-color);
+    background-color: var(--header-linke-color);
 }
 
-.header-list{
+.header-list {
     display: flex;
     margin-left: 93px;
 
 }
-.header-item{
+
+.header-item {
     margin-right: 50px;
 }
+
 .header-item:last-child{
     margin-right: 0px;
 }
+
 .header-list-info 
-.header-item-info + .header-item-info{
+.header-item-info + .header-item-info {
     margin-left: 50px;
 }
-.header-list-info{
+
+.header-list-info {
     display: flex;
     margin-left: auto;
 }
@@ -118,24 +127,24 @@ color: var(--header-linke-color);
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color:var(--hero-text);
+    color: var(--hero-text);
 }
 
 .header-tell,
 .footer-tell,
-.footer-mail{
+.footer-mail {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: 250ms var(--animation-cub);
-    color:var(--hero-text);
+    color: var(--hero-text);
 }
 
 .header-tell:hover,.header-tell:focus,
 .header-mail:hover,.header-mail:focus {
 
-    color:var(--header-linke-color);
+    color: var(--header-linke-color);
 }
 
 .header-mail, 
@@ -145,7 +154,7 @@ color: var(--header-linke-color);
 }
 
 .header-icon-mail, 
-.header-icon-tell{
+.header-icon-tell {
     display: flex;
     margin-right: 10px;
     fill:currentColor;

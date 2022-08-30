@@ -1,6 +1,7 @@
 
 @import './utils/variables';
-@import'./reset/_reset.sccs';
+@import './resets/reset';
+
 @import './components/header';
 @import './components/hero';
 @import './components/foto';
@@ -8,7 +9,9 @@
 @import './components/consumers';
 @import './components/footer';
 @import './components/footer-form';
+
 @import './modal/modalka';
 @import './modal/checkbox';
+
 @import './portfolio/portfolio';
 @import './portfolio/galery';
