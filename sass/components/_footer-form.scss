@@ -27,19 +27,17 @@
     background-color: transparent;
     color: #fff;
     transition: border-color 250ms var(--animation-cub);
-}
-                    
-.footer-input:focus {
-    border-color: var(--header-linke-color);
-}
-
-.footer-input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+        &:focus {
+        border-color: var(--header-linke-color);
+    }
+        &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 .footer-form-button {
@@ -62,13 +60,14 @@
     background-color: var(--header-linke-color);
     color: #fff;
     transition: box-shadow 250ms var(--animation-cub);
+        &:hover,
+        &:focus {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        cursor: pointer;
+}
 }
                     
-.footer-form-button:hover,
-.footer-form-button:focus {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
-}
+
 
 .footer-form-icon {
     margin-left: 10px;

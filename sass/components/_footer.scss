@@ -41,13 +41,13 @@
 
     color:var(--title-color-too);
 }
+
 .footer-mail,
 .footer-tel{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -94,9 +94,9 @@
     background: rgba(255, 255, 255, 0.1);
     fill: #fff;
     transition: 250ms var(--animation-cub);
+        &:hover,
+        &:focus {
+        background-color:var(--header-linke-color);
+}
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-    background-color:var(--header-linke-color);
-}

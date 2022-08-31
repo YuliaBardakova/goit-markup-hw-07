@@ -32,10 +32,9 @@
 
 .team-item {
     margin-right: 30px;
-}
-
-.team-item:last-child {
-    margin-right: 0px;
+        &:last-child {
+        margin-right: 0px;
+    }
 }
 
 .time-fio{
@@ -64,10 +63,10 @@
     border-radius: 50%;
     fill: var(--icon-color);
     transition: 250ms var(--animation-cub);
+        &:hover,
+        &:focus {
+        fill: #fff;
+        background-color:var(--header-linke-color);
+}
 }
 
-.team-soc-link:hover,
-.team-soc-link:focus {
-    fill: #fff;
-    background-color:var(--header-linke-color);
-}

@@ -30,10 +30,10 @@
     border-radius: 4px;
     fill:var(--icon-color);
     transition: 250ms var(--animation-cub);
+        &:hover,
+        &:focus {
+        fill:var(--header-linke-color);
+        border-color:var(--header-linke-color);
+}
 }
 
-.consumers-link:hover,
-.consumers-link:focus {
-    fill:var(--header-linke-color);
-    border-color:var(--header-linke-color);
-}
