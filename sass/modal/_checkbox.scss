@@ -70,5 +70,22 @@
         transform: scale(1.03);
 }
 }
-    
-    
+
+
+    /* .checkbox-text::before{
+    content:"";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    margin-right: 5px;
+    transition: background-color: 250ms linear;
+}
+
+.input-check:checked + .checkbox-text::before {
+    background-color: var(--header-linke-color);
+    background-image: url(../images/chek.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+} */
