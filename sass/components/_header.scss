@@ -2,13 +2,12 @@
     border-bottom: 1px solid #ececec;
 }
 
-.header-nav,.main-nav {
+.navigation,.main-nav {
     display: flex;
     align-items: center; 
 }
 
-.header-logo,
-.footer-logo {
+.logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -28,11 +27,11 @@
     color: #000000;
 }
 
-.header-list .link.current{
+.navigation__list .link.current{
     color: var(--header-linke-color);
 }
 
-.header-link{
+.navigation__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -64,7 +63,7 @@
 }
 }
 
-.header-link:hover::after {
+.navigation__link:hover::after {
     opacity: 1;
     transform: scaleX(1);
 
@@ -92,41 +91,44 @@ color: var(--header-linke-color);
     }
 }
 
-.header-list {
+.navigation__list {
     display: flex;
     margin-left: 93px;
 
 }
 
-.header-item {
+.navigation__item {
     margin-right: 50px;
         &:last-child{
         margin-right: 0px;
     }
 }
 
-.header-list-info 
-.header-item-info + .header-item-info {
+.contact-list, 
+.contact-list__item + .contact-list__item {
     margin-left: 50px;
 }
 
-.header-list-info {
+.contact-list {
     display: flex;
     margin-left: auto;
 }
 
-.header-mail{
+.contact__link__mail{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     color: var(--hero-text);
+    &:hover,
+    &:focus {
+        color: var(--header-linke-color);
+    }
 }
 
-.header-tell,
-.footer-tell,
-.footer-mail {
+.contact__link__tell,
+.address__tell,
+.address__mail {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -135,20 +137,19 @@ color: var(--header-linke-color);
     color: var(--hero-text);
 }
 
-.header-tell:hover,.header-tell:focus,
-.header-mail:hover,.header-mail:focus {
-
+.contact__link__tell:hover,
+.contact__link__tell:focus {
     color: var(--header-linke-color);
 }
 
-.header-mail, 
-.header-tell {
+.contact__link__mail, 
+.contact__link__tell {
     display: flex;
     align-items: center;
 }
 
-.header-icon-mail, 
-.header-icon-tell {
+.contact__icon__mail, 
+.contact__icon__tell {
     display: flex;
     margin-right: 10px;
     fill:currentColor;

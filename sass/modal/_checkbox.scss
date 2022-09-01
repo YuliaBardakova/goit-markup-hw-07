@@ -1,4 +1,4 @@
-.checkbox-text{
+.checkbox__policy{
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -19,25 +19,25 @@
 
 }
 
-.check-icon{
+.check__icon{
     fill: #fff;
     transition: fill 250ms linear;
 }
 
-.input-check:checked + .checkbox-text span {
+.checkbox:checked + .checkbox__policy span {
     background-color: var(--header-linke-color);
     border-color: var(--header-linke-color);
     border: none;
 }
 
-.input-check:checked + .checkbox-text .check-icon {
+.checkbox:checked + .checkbox__policy .check__icon {
     fill: #fff;
 }
-.input-check:focus + .checkbox-text span {
+.checkbox:focus + .checkbox__policy span {
     border-color: var(--header-linke-color);
 }
 
-.checkbox-polis{
+.polis{
     font-size: 14px;
     letter-spacing: 0.03em;
     margin-left: 3px;
@@ -45,7 +45,7 @@
     color:var(--header-linke-color);
 }
 
-.modal-btn{
+.modal__btn{
     display:block;
     margin: 0 auto;
     padding: 10px 32px;
